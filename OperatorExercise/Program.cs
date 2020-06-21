@@ -10,9 +10,14 @@ namespace OperatorExercise
             var b = 4;
             var div = a / b;
             var mod = a % b;
-            Console.WriteLine($"{a}/{b} is { div} remainder {mod}");
+            var j = 4;
+            var i = 3;
+            var k = ++i * j++;
 
-            Console.WriteLine("What is the radius of your circle");
+            
+            Console.WriteLine($"{a}/{b} is { div} remainder {mod} and K is equal to {k}");
+
+            Console.WriteLine("What is the radius of your circle?");
 
             var radius = double.Parse(Console.ReadLine());
             var areaOfCircle = CalculateArea(radius);
